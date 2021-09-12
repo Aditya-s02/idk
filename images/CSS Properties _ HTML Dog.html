@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://htmldog.com/references/css/properties/ -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>CSS Properties | HTML Dog</title>
+
+<!--[if !(lt IE 9)]><!-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link href="./CSS Properties _ HTML Dog_files/arcticFox.css" rel="stylesheet">
+
+
+
+	<link href="./CSS Properties _ HTML Dog_files/css" rel="stylesheet">
+
+<!--<![endif]-->
+
+	<!--[if lt IE 9]><script src="/rAF/html5shiv.js"></script><link href="/rAF/altBasic.css" rel="stylesheet"><![endif]--> 
+
+
+
+	<link rel="icon" type="image/png" href="https://htmldog.com/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://htmldog.com/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="https://htmldog.com/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://htmldog.com/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="https://htmldog.com/manifest.json">
+	<link rel="mask-icon" href="https://htmldog.com/safari-pinned-tab.svg">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#0088ee">
+
+<script src="./CSS Properties _ HTML Dog_files/osd.js.download"></script><script src="./CSS Properties _ HTML Dog_files/f.txt"></script><script src="./CSS Properties _ HTML Dog_files/f(1).txt" id="google_shimpl"></script><script async="" src="./CSS Properties _ HTML Dog_files/analytics.js.download"></script><script type="text/javascript" id="_bsap_js_42de178ce2c5601e0c8eebfd00a854ae" src="./CSS Properties _ HTML Dog_files/s_42de178ce2c5601e0c8eebfd00a854ae.js.download" async="async"></script><meta http-equiv="origin-trial" content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" src="./CSS Properties _ HTML Dog_files/pro.js.download" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="./CSS Properties _ HTML Dog_files/saved_resource" async="async"></script><link rel="preload" href="./CSS Properties _ HTML Dog_files/f(2).txt" as="script"><script type="text/javascript" src="./CSS Properties _ HTML Dog_files/f(2).txt"></script><link rel="preload" href="./CSS Properties _ HTML Dog_files/f(3).txt" as="script"><script type="text/javascript" src="./CSS Properties _ HTML Dog_files/f(3).txt"></script><meta http-equiv="origin-trial" content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="./CSS Properties _ HTML Dog_files/f(2).txt" as="script"><script type="text/javascript" src="./CSS Properties _ HTML Dog_files/f(2).txt"></script><link rel="preload" href="./CSS Properties _ HTML Dog_files/f(3).txt" as="script"><script type="text/javascript" src="./CSS Properties _ HTML Dog_files/f(3).txt"></script></head>
+
+
+
+
+<body>
+
+<header id="pageMeta">
+<div class="accessAid"><a href="https://htmldog.com/" title="Home"><img src="./CSS Properties _ HTML Dog_files/htmldog.png" width="180" height="130" alt="HTML Dog"></a></div>
+	<div id="toNav"><a href="https://htmldog.com/references/css/properties/#nav">Skip to navigation</a></div>
+</header>
+
+<nav id="youAreHere">
+<p><strong class="accessAid">You are here: </strong><a href="https://htmldog.com/" id="yahHome">Home</a>&nbsp;→ <a href="https://htmldog.com/references/" class="yahSec yahRef">References</a>&nbsp;→ <a href="https://htmldog.com/references/css/">CSS</a>&nbsp;→</p>
+</nav>
+
+<article style="height: auto !important;">
+
+<header>
+
+
+	<h1>CSS Properties</h1>
+
+
+	
+<aside class="foodH1"><div id="bsap_1305903" class="bsap bsap_1305903" data-serve="CVADE53J"><!-- no ad --></div></aside>
+<aside class="foodH1">
+	<div id="bsap_1305780" class="bsap bsap_1305780" data-serve="CVAD52Q7" style="height: auto !important; max-height: none !important;">
+		<div class="foodGoog"><script type="text/javascript" id="auto_1" class="ignoreme" src="./CSS Properties _ HTML Dog_files/f(4).txt"></script>
+<ins class="adsbygoogle" data-ad-client="ca-pub-2105257479089713" data-ad-slot="4282714042" data-ad-format="auto" data-adsbygoogle-status="done" style="height: 280px;" data-ad-status="filled"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:645px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 645px; background-color: transparent; overflow: visible;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:645px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="645" height="280" frameborder="0" src="./CSS Properties _ HTML Dog_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!1" data-google-query-id="CLvM5unYy_ICFQgOjwodbJQHwA" data-load-complete="true"></iframe></ins></ins></ins>
+<script type="text/javascript" id="auto_2" class="ignoreme">(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+	
+      <style type="text/css">
+        
+        .bsap_1305780 .ads-via { display: block; }
+        .bsap_1305780 .adhere:nth-of-type(1n+1) { display: none; }
+        .bsap_1305780 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    <!-- no ad -->
+      
+      <script type="text/javascript" id="auto_3" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1305780); </script>
+    </div>
+</aside>
+
+
+	<p>Valid properties belonging to the CSS3 standard.</p>
+
+
+</header>
+
+<section class="longlist acodeblock">
+
+	
+
+<aside class="note three">
+<p>CSS3, the latest CSS standard, is modular and, as such, various chunks of it are at various stages of development, review, testing, and implementation by standards-setting bodies and browser manufacturers.</p>
+
+<p>This section is in an ongoing process of being reviewed and extended to accommodate the more practical features of CSS3. Unless otherwise stated, these properties are classed as either full <strong>Recommendations</strong> or <strong>stable Candidate Recommendations</strong>. They are practical options that are widely supported and safe to use.</p>
+</aside>
+
+<aside class="foodC"><div id="bsap_1305864" class="bsap bsap_1305864" data-serve="CVADE23N">
+      <style type="text/css">
+        
+        .bsap_1305864 .ads-via { display: block; }
+        .bsap_1305864 .adhere:nth-of-type(1n+1) { display: none; }
+        .bsap_1305864 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    <!-- no ad -->
+      
+      <script type="text/javascript" id="auto_4" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1305864); </script>
+    </div></aside>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/all/"><code>all</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background/"><code>background</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-attachment/"><code>background-attachment</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-clip/"><code>background-clip</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-color/"><code>background-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-image/"><code>background-image</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-origin/"><code>background-origin</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-position/"><code>background-position</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-repeat/"><code>background-repeat</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-size/"><code>background-size</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border/"><code>border</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom/"><code>border-bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-color/"><code>border-bottom-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-left-radius/"><code>border-bottom-left-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-right-radius/"><code>border-bottom-right-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-style/"><code>border-bottom-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-width/"><code>border-bottom-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-collapse/"><code>border-collapse</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-color/"><code>border-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image/"><code>border-image</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-outset/"><code>border-image-outset</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-repeat/"><code>border-image-repeat</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-slice/"><code>border-image-slice</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-source/"><code>border-image-source</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-width/"><code>border-image-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left/"><code>border-left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left-color/"><code>border-left-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left-style/"><code>border-left-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left-width/"><code>border-left-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-radius/"><code>border-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right/"><code>border-right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right-color/"><code>border-right-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right-style/"><code>border-right-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right-width/"><code>border-right-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-spacing/"><code>border-spacing</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-style/"><code>border-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top/"><code>border-top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-color/"><code>border-top-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-left-radius/"><code>border-top-left-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-right-radius/"><code>border-top-right-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-style/"><code>border-top-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-width/"><code>border-top-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-width/"><code>border-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/bottom/"><code>bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/box-shadow/"><code>box-shadow</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/caption-side/"><code>caption-side</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/clear/"><code>clear</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/clip/"><code>clip</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/color/"><code>color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/content/"><code>content</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/counter-increment/"><code>counter-increment</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/counter-reset/"><code>counter-reset</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/cursor/"><code>cursor</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/direction/"><code>direction</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/display/"><code>display</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/empty-cells/"><code>empty-cells</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/float/"><code>float</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font/"><code>font</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-family/"><code>font-family</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-size/"><code>font-size</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-size-adjust/"><code>font-size-adjust</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-stretch/"><code>font-stretch</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-style/"><code>font-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-synthesis/"><code>font-synthesis</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-variant/"><code>font-variant</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-weight/"><code>font-weight</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/height/"><code>height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/left/"><code>left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/letter-spacing/"><code>letter-spacing</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/line-height/"><code>line-height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style/"><code>list-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style-image/"><code>list-style-image</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style-position/"><code>list-style-position</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style-type/"><code>list-style-type</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin/"><code>margin</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-bottom/"><code>margin-bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-left/"><code>margin-left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-right/"><code>margin-right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-top/"><code>margin-top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/max-height/"><code>max-height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/max-width/"><code>max-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/min-height/"><code>min-height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/min-width/"><code>min-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/opacity/"><code>opacity</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/orphans/"><code>orphans</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline/"><code>outline</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline-color/"><code>outline-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline-style/"><code>outline-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline-width/"><code>outline-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/overflow/"><code>overflow</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding/"><code>padding</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-bottom/"><code>padding-bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-left/"><code>padding-left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-right/"><code>padding-right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-top/"><code>padding-top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/page-break-after/"><code>page-break-after</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/page-break-before/"><code>page-break-before</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/page-break-inside/"><code>page-break-inside</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/position/"><code>position</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/quotes/"><code>quotes</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/right/"><code>right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/table-layout/"><code>table-layout</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-align/"><code>text-align</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration/"><code>text-decoration</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration-color/"><code>text-decoration-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration-line/"><code>text-decoration-line</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration-style/"><code>text-decoration-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-indent/"><code>text-indent</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-transform/"><code>text-transform</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/top/"><code>top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transform/"><code>transform</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transform-origin/"><code>transform-origin</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition/"><code>transition</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-delay/"><code>transition-delay</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-duration/"><code>transition-duration</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-property/"><code>transition-property</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-timing-function/"><code>transition-timing-function</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/unicode-bidi/"><code>unicode-bidi</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/vertical-align/"><code>vertical-align</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/visibility/"><code>visibility</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/white-space/"><code>white-space</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/widows/"><code>widows</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/width/"><code>width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/word-spacing/"><code>word-spacing</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/z-index/"><code>z-index</code></a></li>
+</ul>
+
+<div id="bsap_1305815" class="bsap bsap_1305815" data-serve="CVAD55QE"><!-- no ad --></div>
+<aside id="foodC2">
+	<p class="bsa_it_ad">
+		<a href="https://htmldog.com/advertise/">
+
+			<strong class="bsa_it_t">Advertise Here!</strong>
+			<span class="bsa_it_d">On a long-established, well-read, well-respected web development resource.</span>
+		</a>
+	</p>
+</aside>
+
+<h2>By Category</h2>
+
+<h3>Text and Fonts</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/font/"><code>font</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-family/"><code>font-family</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-size/"><code>font-size</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-weight/"><code>font-weight</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-style/"><code>font-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-variant/"><code>font-variant</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-stretch/"><code>font-stretch</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-size-adjust/"><code>font-size-adjust</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/font-synthesis/"><code>font-synthesis</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/line-height/"><code>line-height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/letter-spacing/"><code>letter-spacing</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/word-spacing/"><code>word-spacing</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-align/"><code>text-align</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration/"><code>text-decoration</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration-line/"><code>text-decoration-line</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration-style/"><code>text-decoration-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-decoration-color/"><code>text-decoration-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-indent/"><code>text-indent</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/text-transform/"><code>text-transform</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/vertical-align/"><code>vertical-align</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/white-space/"><code>white-space</code></a></li>
+</ul>
+
+<h3>Colors and Backgrounds</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/color/"><code>color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/opacity/"><code>opacity</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-color/"><code>background-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background/"><code>background</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-image/"><code>background-image</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-repeat/"><code>background-repeat</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-position/"><code>background-position</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-attachment/"><code>background-attachment</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-clip/"><code>background-clip</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-origin/"><code>background-origin</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/background-size/"><code>background-size</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-radius/"><code>border-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-left-radius/"><code>border-top-left-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-right-radius/"><code>border-top-right-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-right-radius/"><code>border-bottom-right-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-left-radius/"><code>border-bottom-left-radius</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image/"><code>border-image</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-source/"><code>border-image-source</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-slice/"><code>border-image-slice</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-width/"><code>border-image-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-outset/"><code>border-image-outset</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-image-repeat/"><code>border-image-repeat</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/box-shadow/"><code>box-shadow</code></a></li>
+</ul>
+
+<h3>The Box Model: margins, padding, and borders</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/margin/"><code>margin</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-top/"><code>margin-top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-right/"><code>margin-right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-bottom/"><code>margin-bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/margin-left/"><code>margin-left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding/"><code>padding</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-top/"><code>padding-top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-right/"><code>padding-right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-bottom/"><code>padding-bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/padding-left/"><code>padding-left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border/"><code>border</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top/"><code>border-top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right/"><code>border-right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom/"><code>border-bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left/"><code>border-left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-width/"><code>border-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-width/"><code>border-top-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right-width/"><code>border-right-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-width/"><code>border-bottom-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left-width/"><code>border-left-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-style/"><code>border-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-style/"><code>border-top-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right-style/"><code>border-right-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-style/"><code>border-bottom-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left-style/"><code>border-left-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-color/"><code>border-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-top-color/"><code>border-top-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-right-color/"><code>border-right-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-bottom-color/"><code>border-bottom-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-left-color/"><code>border-left-color</code></a></li>
+</ul>
+
+<h3>Visual Formatting: dimensions, display, and positioning</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/width/"><code>width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/height/"><code>height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/min-width/"><code>min-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/max-width/"><code>max-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/min-height/"><code>min-height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/max-height/"><code>max-height</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/position/"><code>position</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/top/"><code>top</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/right/"><code>right</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/bottom/"><code>bottom</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/left/"><code>left</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/clip/"><code>clip</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/overflow/"><code>overflow</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/z-index/"><code>z-index</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/float/"><code>float</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/clear/"><code>clear</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/display/"><code>display</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/visibility/"><code>visibility</code></a></li>
+</ul>
+
+<h3>Generated Content and Lists</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/content/"><code>content</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/quotes/"><code>quotes</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/counter-increment/"><code>counter-increment</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/counter-reset/"><code>counter-reset</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style/"><code>list-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style-type/"><code>list-style-type</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style-image/"><code>list-style-image</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/list-style-position/"><code>list-style-position</code></a></li>
+</ul>
+
+<h3>Tables</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/table-layout/"><code>table-layout</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-collapse/"><code>border-collapse</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/border-spacing/"><code>border-spacing</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/empty-cells/"><code>empty-cells</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/caption-side/"><code>caption-side</code></a></li>
+</ul>
+
+<h3>Paged Media</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/page-break-before/"><code>page-break-before</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/page-break-after/"><code>page-break-after</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/page-break-inside/"><code>page-break-inside</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/orphans/"><code>orphans</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/widows/"><code>widows</code></a></li>
+</ul>
+
+<h3>Transitions</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/transition/"><code>transition</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-property/"><code>transition-property</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-duration/"><code>transition-duration</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-timing-function/"><code>transition-timing-function</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transition-delay/"><code>transition-delay</code></a></li>
+</ul>
+
+<h3>Transformations</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/transform/"><code>transform</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/transform-origin/"><code>transform-origin</code></a></li>
+</ul>
+
+<h3>Misc.</h3>
+
+<ul>
+<li><a href="https://htmldog.com/references/css/properties/outline/"><code>outline</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline-style/"><code>outline-style</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline-color/"><code>outline-color</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/outline-width/"><code>outline-width</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/cursor/"><code>cursor</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/direction/"><code>direction</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/unicode-bidi/"><code>unicode-bidi</code></a></li>
+<li><a href="https://htmldog.com/references/css/properties/all/"><code>all</code></a></li>
+</ul>
+
+<h2>Usage</h2>
+
+<p>CSS <strong>properties</strong>, associated with <a href="https://htmldog.com/references/css/values/"><strong>values</strong></a>, form <strong>declarations</strong>. <strong>Declaration blocks</strong>, assigned with <a href="https://htmldog.com/references/css/selectors/"><strong>selectors</strong></a>, form <strong>rule sets</strong>. They are used as follows:</p>
+
+<pre class=" language-css"><code class="oldLang  language-css">
+<span class="token selector">selector</span> <span class="token punctuation">{</span> <span class="token property">property</span><span class="token punctuation">:</span> value <span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* or, for with more selectors and values... */</span>
+
+<span class="token selector">selector1, selector2, selector3</span> <span class="token punctuation">{</span>
+    <span class="token property">property1</span><span class="token punctuation">:</span> value1<span class="token punctuation">;</span>
+    <span class="token property">property2</span><span class="token punctuation">:</span> value2<span class="token punctuation">;</span>
+    <span class="token property">property3</span><span class="token punctuation">:</span> value3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+
+
+</section>
+
+<footer id="related">
+
+	<h2>Related pages</h2>
+
+
+
+
+  <ul>
+  <li><a href="https://htmldog.com/guides/css/beginner/selectors/">Selectors, Properties, and Values</a> (CSS Beginner Tutorial)</li>
+  <li><a href="https://htmldog.com/guides/css/">CSS Tutorials</a></li>
+  <li><a href="https://htmldog.com/references/css/values/">CSS Values</a></li>
+  <li><a href="https://htmldog.com/references/css/selectors/">CSS Selectors</a></li>
+  <li><a href="https://htmldog.com/references/html/tags/">HTML Tags</a></li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+</article>
+
+
+
+<nav id="nav">
+	
+	<section id="theThreeNaviteers">
+	
+		<section id="navMain">
+			<h2>Main menu</h2>
+			<ul>
+				<li><a href="https://htmldog.com/guides/" id="navTut">Tutorials</a>
+					<ul>
+						<li><a href="https://htmldog.com/guides/html/">HTML</a></li>
+						<li><a href="https://htmldog.com/guides/css/">CSS</a></li>
+						<li><a href="https://htmldog.com/guides/javascript/">JavaScript</a></li>
+					</ul>
+				</li>
+				<li><a href="https://htmldog.com/techniques/" id="navTech">Techniques</a></li>
+				<li><a href="https://htmldog.com/examples/" id="navEg">Examples</a></li>
+				<li><a href="https://htmldog.com/references/" id="navRef">References</a>
+					<ul>
+            	        <li><a href="https://htmldog.com/references/html/">HTML</a>
+							<ul>
+								<li><a href="https://htmldog.com/references/html/tags/">Tags</a></li>
+								<li><a href="https://htmldog.com/references/html/globalattributes/">Attributes</a></li>
+								<li><a href="https://htmldog.com/references/html/characters/">Characters</a></li>
+							</ul>
+						</li>
+						<li><a href="https://htmldog.com/references/css/">CSS</a>
+							<ul>
+								<li><a href="https://htmldog.com/references/css/properties/">Properties</a></li>
+								<li><a href="https://htmldog.com/references/css/selectors/">Selectors</a></li>
+								<li><a href="https://htmldog.com/references/css/values/">Values</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+
+
+
+
+		<section id="navSupp">
+			<h2>Supplemental menu</h2>
+			<ul>
+				<li><a href="https://htmldog.com/about/">About Us</a></li>
+				<li><a href="https://htmldog.com/contact/">Contact Us</a></li>
+				<li><a href="https://htmldog.com/linkto/">Link to Us</a></li>
+				<li><a href="https://htmldog.com/advertise/">Advertise With Us</a></li>
+				<li><a href="https://htmldog.com/webhosting/">Web Hosting</a></li>
+				<li><a href="https://htmldog.com/sitemap/">Site Map</a></li>
+				<li><a href="https://htmldog.com/" id="navHome" title="Home">Home</a></li>		
+			</ul>
+		</section>
+	
+	</section>
+
+	<form action="https://htmldog.com/search/" id="search">
+		<label for="sInput">Search</label>
+		<input name="q" id="sInput">
+		<input type="submit" value="Go!" id="sGo">
+	</form>
+
+	<a href="https://htmldog.com/references/css/properties/#" id="toTop">↑ Top</a>
+
+</nav>
+
+<footer id="siteFooter" style="height: auto !important;">
+	
+<aside class="foodF"><div id="bsap_1305782" class="bsap bsap_1305782" data-serve="CVAD52JJ"><!-- no ad --></div></aside>
+<aside id="foodF1" class="foodF"><div class="foodGoog"><script async="" src="./CSS Properties _ HTML Dog_files/f(4).txt"></script>
+<ins class="adsbygoogle" data-ad-client="ca-pub-2105257479089713" data-ad-slot="4282714042" data-ad-format="horizontal" data-adsbygoogle-status="done" style="height: 100px;" data-ad-status="filled"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:100px;margin:0;padding:0;position:relative;visibility:visible;width:660px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="display: block; border: none; height: 100px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 660px; background-color: transparent; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:660px;height:100px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="660" height="100" frameborder="0" src="./CSS Properties _ HTML Dog_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!2" data-google-query-id="CLSmjPDYy_ICFU0KXAodD1AJIQ" data-load-complete="true"></iframe></ins></ins></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></aside>
+
+	
+<p>© 2003–2021. <a href="https://htmldog.com/terms/">Terms of use</a>.<br><a href="https://htmldog.com/edinburgh/">Web design and development by <strong>HTML Dog, Edinburgh</strong></a>.</p>
+
+</footer>
+
+<script src="./CSS Properties _ HTML Dog_files/prism.js.download"></script>
+
+
+
+
+<script src="./CSS Properties _ HTML Dog_files/bsa.js.download"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49412703-1', 'htmldog.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_2_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./CSS Properties _ HTML Dog_files/ads(2).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!3" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_9839502316066" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./CSS Properties _ HTML Dog_files/saved_resource.html"></iframe><iframe src="./CSS Properties _ HTML Dog_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./CSS Properties _ HTML Dog_files/zrt_lookup.html" style="display: none;"></iframe></html>
